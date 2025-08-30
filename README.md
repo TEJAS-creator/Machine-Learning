@@ -30,8 +30,3 @@ This repository contains the following key files:
 - **Libraries**:
   - `transformers`: For implementing transformer-based models.
   - `torch`: PyTorch library for deep learning.
-
-
-   ```bash
-   git clone https://github.com/TEJAS-creator/Machine-Learning.git
-   cd Machine-Learning
