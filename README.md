@@ -24,6 +24,21 @@ This repository contains the following key files:
 - **Approach**: Leveraged the transformer architecture to capture long-range dependencies in text data.
 - **Outcome**: Demonstrated the model's ability to generate human-like text across various prompts.
 
+## Overview
+
+The `digit_classifier.py` program is designed to recognize and classify handwritten digits (0–9). It uses a dataset of images (e.g. MNIST or similar) to train a model, then predicts what digit is shown in input images.  
+
+---
+
+## Features
+
+- Loads and preprocesses handwritten digit image data.  
+- Defines, trains, and saves a classification model.  
+- Evaluates model on test data.  
+- Predicts digit for new input images.  
+
+---
+
 ## ⚙️ Technologies Used
 
 - **Programming Language**: Python
