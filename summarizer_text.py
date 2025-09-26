@@ -1,12 +1,40 @@
 from transformers import pipeline
 summarizer = pipeline("summarization")
 article = """
-Essay on One Piece Anime
-
-One Piece is one of the greatest and most celebrated anime series of all time. Created by Eiichiro Oda, the story has captured the hearts of millions across the globe. The anime adaptation by Toei Animation began in 1999 and continues to run successfully even today, making it one of the longest-running series in history. What makes One Piece special is not just its length but also the depth of its storytelling, world-building, and emotional power.
-At the center of the story is Monkey D. Luffy, a cheerful and determined young pirate who dreams of becoming the Pirate King. Luffy gains his powers after eating a Devil Fruit called the Gomu Gomu no Mi, which makes his body stretch like rubber. Though this ability is strange, it becomes his greatest weapon in battles against powerful enemies. However, the fruit also takes away his ability to swim, a huge weakness for a pirate. Despite this, Luffy’s spirit and determination make him unstoppable.
-The adventure begins when Luffy sets out to find the legendary treasure known as the “One Piece.” This treasure, hidden at the end of the dangerous Grand Line, is said to grant unimaginable wealth and the title of Pirate King to whoever claims it. Luffy’s goal is not motivated by greed but by the desire for freedom, adventure, and proving himself to the world. His dream inspires not only himself but also the people around him.
+Text here
 """
 
 summary = summarizer(article,max_length=150,min_length=50, do_sample=False)
 summary[0]["summary_text"]
+
+
+# 🔹 Text Tasks
+# Sentiment Analysis → Classify text as positive, negative, neutral.
+# Text Generation → Generate new text (autocomplete, stories, etc.).
+# Translation → Translate text from one language to another.
+
+# Question Answering → Extract answers from context passages.
+# Text Classification → Categorize text into predefined classes.
+# Zero-Shot Classification → Classify text into categories without explicit training.
+# Summarization → Shorten text while keeping main meaning.
+# Conversational → Maintain back-and-forth chatbot-like dialogue.
+
+# 🔹 Token-Level Tasks
+# Named Entity Recognition (NER) → Identify entities like names, places, dates.
+# Part-of-Speech Tagging → Label words as noun, verb, adjective, etc.
+# Fill-Mask → Predict missing words in a sentence.
+
+# 🔹 Vision (Image) Tasks
+# Image Classification → Identify what an image contains.
+# Object Detection → Detect and locate objects in an image.
+# Image Segmentation → Divide image into regions/objects.
+# Image-to-Text (Captioning) → Generate captions for images.
+
+# 🔹 Audio (Speech) Tasks
+# Automatic Speech Recognition (ASR) → Convert speech to text.
+# Text-to-Speech → Convert text into natural-sounding voice.
+# Audio Classification → Identify sounds (e.g., music, barking, sirens).
+
+# 🔹 Multimodal Tasks
+# Document Question Answering → Answer questions about text/images in documents.
+# Visual Question Answering (VQA) → Answer questions about an image
