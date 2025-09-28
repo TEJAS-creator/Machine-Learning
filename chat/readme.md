@@ -155,9 +155,6 @@ Without embeddings, systems rely on **keyword matching**, which fails with synon
 
 ## 5. Example Code (Tiny Demo)
 
-from sentence_transformers import SentenceTransformer, util
-import numpy as np
-
 # Load embedding model
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
