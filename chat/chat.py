@@ -47,7 +47,7 @@ def answer_question(question, context):
 # -------------------
 # Streamlit UI
 # -------------------
-st.title("📘 Chat with Your Text (Mini Demo)")
+st.title("📘 Chat with Your Text")
 
 text_input = st.text_area("Paste your text here:", height=200)
 question = st.text_input("Ask a question about the text:")
