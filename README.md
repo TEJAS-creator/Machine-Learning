@@ -11,8 +11,7 @@ Welcome to my collection of machine learning projects! This repository showcases
 - `transformer_GPT-2.py` — GPT-2 transformer based model code  
 - `tokenizer.py`, `prediction_tokenizer.py` — tokenization utilities  
 - `summarizer_text.py` — text summarization script  
-- `digit_classifier.py` — handwritten digit recognition model  
-- `README.md` — this file  
+- `digit_classifier.py` — handwritten digit recognition model
 
 ---
 
