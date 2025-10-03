@@ -4,44 +4,43 @@ Welcome to my collection of machine learning projects! This repository showcases
 
 ## 📂 Repository Contents
 
-This repository contains the following key files:
-
-- `GPT-Neo-1.3B.py`: Implementation of the GPT-Neo 1.3B model for text generation tasks.
-- `transformer_GPT-2.py`: Implementation of the GPT-2 transformer model for language modeling.
-- `tokenizer.py` & `prediction_tokenizer.py`: Scripts for tokenizing input data for transformer models.
-
-## 🧠 Project Highlights
-
-### 1. **GPT-Neo-1.3B Model**
-
-- **Objective**: Develop a text generation model capable of producing coherent and contextually relevant text based on a given prompt.
-- **Approach**: Utilized the GPT-Neo 1.3B model, a transformer-based architecture, to train on a diverse text corpus.
-- **Outcome**: Achieved significant improvements in text coherence and contextual relevance compared to baseline models.
-
-### 2. **GPT-2 Transformer Model**
-
-- **Objective**: Implement the GPT-2 model for language modeling and text generation tasks.
-- **Approach**: Leveraged the transformer architecture to capture long-range dependencies in text data.
-- **Outcome**: Demonstrated the model's ability to generate human-like text across various prompts.
-
-## Overview
-
-The `digit_classifier.py` program is designed to recognize and classify handwritten digits (0–9). It uses a dataset of images (e.g. MNIST or similar) to train a model, then predicts what digit is shown in input images.  
+- `Sci-kit learn/` — projects using classical ML with scikit-learn  
+- `chat/` — conversational / chatbot experiments  
+- `images/` — example images, datasets, or visualization storage  
+- `GPT-Neo-1.3B.py` — implementation / usage of GPT-Neo 1.3B transformer model  
+- `transformer_GPT-2.py` — GPT-2 transformer based model code  
+- `tokenizer.py`, `prediction_tokenizer.py` — tokenization utilities  
+- `summarizer_text.py` — text summarization script  
+- `digit_classifier.py` — handwritten digit recognition model  
+- `README.md` — this file  
 
 ---
 
-## Features
+## 🎯 Project Highlights
 
-- Loads and preprocesses handwritten digit image data.  
-- Defines, trains, and saves a classification model.  
-- Evaluates model on test data.  
-- Predicts digit for new input images.  
+### 1. GPT-Neo 1.3B Model  
+- Implements a transformer-based text generation system using the GPT-Neo architecture  
+- Trains or fine-tunes on a language corpus to generate coherent text responses  
+
+### 2. GPT-2 Transformer  
+- A classic implementation of GPT-2 for language modeling  
+- Demonstrates prompt-based generation and sampling strategies  
+
+### 3. Digit Classifier  
+- Uses datasets (e.g. MNIST) to train a classifier for handwritten digits (0–9)  
+- Handles data loading, preprocessing, model training, evaluation, and inference  
+
+### 4. Tokenization Utilities  
+- `tokenizer.py` & `prediction_tokenizer.py` help in converting raw text to token IDs and vice versa  
+- Can be reused across transformer / NLP tasks  
+
+### 5. Summarizer  
+- Given an input text, produces a shorter summary preserving core meaning  
 
 ---
 
-## ⚙️ Technologies Used
+## 🧰 Technologies & Dependencies
 
-- **Programming Language**: Python
-- **Libraries**:
-  - `transformers`: For implementing transformer-based models.
-  - `torch`: PyTorch library for deep learning.
+- **Python** (3.7+)  
+- Deep learning libraries: `torch`, `transformers`  
+- Other usual data / ML libraries: e.g. `numpy`, `pandas`, `scikit-learn`, `matplotlib`  
