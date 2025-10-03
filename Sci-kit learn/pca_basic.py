@@ -1,3 +1,9 @@
+# reduces the dimension like say from 10D to 3D or 2D
+# Helps with visualization, image compression, noise reduction, and speeding up algorithms.
+# Reduces features while retaining maximum variance (information).
+# It has a set of mathematical operations (matrices)
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
