@@ -6,6 +6,6 @@ Welcome to the Sci-kit Learn section of my Machine Learning repository. This dir
 
 - **Classification**: Implementations of classification algorithms such as Logistic Regression, Support Vector Machines, and Random Forests.
 - **Regression**: Projects demonstrating regression techniques like Linear Regression and Decision Trees.
-- **Clustering**: Examples of clustering methods including K-Means and DBSCAN.
-- **Dimensionality Reduction**: Applications of PCA and other dimensionality reduction techniques.
+- **Clustering**: Example of clustering methods including K-Means
+- **Dimensionality Reduction**: Applications of PCA 
 - **Model Evaluation**: Scripts for evaluating model performance using metrics like accuracy, precision, recall, and F1-score.
