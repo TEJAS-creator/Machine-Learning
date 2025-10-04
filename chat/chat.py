@@ -60,16 +60,31 @@ if st.button("Get Answer"):
     else:
         # Chunk + Index
         chunks = chunk_text(text_input)
-        index, _ = build_faiss_index(chunks)
+        index, chunk_embeddings = build_faiss_index(chunks)
 
         # Retrieve relevant parts
         relevant_chunks = retrieve_relevant_chunks(question, chunks, index)
+        q_emb = embedder.encode([question])
+        chunk_embs = embedder.encode(relevant_chunks)
 
-        # Merge them into context
-        context = " ".join(relevant_chunks)
+        # --- Check similarity ---
+        similarities = np.dot(q_emb, chunk_embs.T) / (
+            np.linalg.norm(q_emb) * np.linalg.norm(chunk_embs)
+        )
+        max_sim = np.max(similarities)
 
-        # Get answer
-        answer = answer_question(question, context)
+        # Threshold for relevance
+        RELEVANCE_THRESHOLD = 0.45  
 
-        st.subheader("Answer:")
-        st.write(textwrap.fill(answer, width=80))
+        if max_sim < RELEVANCE_THRESHOLD:
+            st.subheader("Answer:")
+            st.write("🤔 This question seems unrelated to the provided text.")
+        else:
+            # Merge them into context
+            context = " ".join(relevant_chunks)
+
+            # Get answer
+            answer = answer_question(question, context)
+
+            st.subheader("Answer:")
+            st.write(textwrap.fill(answer, width=80))
