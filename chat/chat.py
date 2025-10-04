@@ -20,7 +20,7 @@ embedder, qa_model = load_models()
 # Functions
 # -------------------
 def chunk_text(text: str, chunk_size: int = 200) -> list[str]:
-    """Split text into smaller overlapping chunks for better context."""
+    # Split text into smaller overlapping chunks for better context.
     words = text.split()
     chunks = []
     step = chunk_size // 2  # Overlap chunks for better continuity
