@@ -96,16 +96,6 @@ Python is used for web development, data science, machine learning, and automati
 
 ---
 
-## ✅ Next Steps (Improvements)
-- Add overlapping chunks for better retrieval.  
-- Show retrieved context to the user for transparency.  
-- Cache FAISS index to avoid recomputation for the same text.  
-- Try different models (e.g., `flan-t5-large`, `bge-small-en`) for accuracy/speed trade-offs.  
-
-
-
-
-
 # Sentence Embeddings with all-MiniLM-L6-v2
 
 ## 1. Why do we need to convert text into numbers?
